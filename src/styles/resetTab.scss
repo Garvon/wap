@@ -1,0 +1,21 @@
+// 重置vux中tab组件样式
+@import "@/styles/theme.scss";
+$tabHeight: 40px;
+.vux-tab-wrap {
+  padding-top: $tabHeight;
+}
+.vux-tab-container {
+  height: $tabHeight;
+}
+.vux-tab {
+  height: $tabHeight;
+  .vux-tab-item {
+    line-height: $tabHeight;
+    &.vux-tab-selected {
+      color: $themeColor;
+    }
+  }
+}
+.vux-tab-bar-inner {
+  background-color: $themeColor;
+}
